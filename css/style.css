@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    display: grid;
+}
+/*body{
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "section section section section"
+    "footer footer footer footer";
+}*/
+
+/*HEADER*/
+
+header{
+    /*grid-area: header;*/
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: rgb(139, 250, 208);
+    border: 100px;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+}
+
+header div h2{
+    color: black;
+
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+}
+
+header nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li{
+    margin-left: 10px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/*MAIN*/
+
+h2{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+main div{
+    display: flex;
+    justify-content: center;
+}
+main section{
+    display: grid;
+    padding: 50px 0;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+
+}
+main section div{
+    display: grid;
+    justify-content: space-around;
+
+}
+
+main section .caja{
+    box-shadow: 0 0 10px rgb(139, 250, 208);
+    border-radius: 5px;
+    width: 250px;
+    text-align: center;
+
+
+}
+
+main section .caja .imagen{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+
+}
+
+main section .caja .nombre{
+    display: flex;
+    justify-content: center;
+}
+
+/*SECTION*/
+section{
+    display: grid;
+    padding: 30px 50px;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+
+}
+
+section div{
+    display: flex;
+    justify-content: center;
+}
+
+section nav{
+    display: flex;
+    align-items: center;
+}
+
+section nav ul{
+    display: flex;
+    text-align: center;
+
+
+
+}
+section nav ul a{
+    text-decoration: none;
+    margin-left: 40px;
+    color: black;
+
+
+}
+
+/*FOOTER*/
+footer{
+    /*grid-area: footer;*/
+    height: 100px;
+    background-color: rgb(139, 250, 208)
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+/*Responsive celular*/
+@media (min-width: 320px) and (max-width: 578px){
+    
+    header{
+        display: grid;
+        grid-template-rows: repeat(4);
+        grid-template-columns: repeat(4);
+    }
+
+    body{
+        font-size: small;
+    }
+
+    main section{
+        display: grid;
+        padding: 50px 0;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    
+    }
+
+    main section .caja{
+        box-shadow: 0 0 10px rgb(139, 250, 208);
+        border-radius: 5px;
+        width: 200px;
+        text-align: center;
+    
+    
+    }
+    
+    main section .caja .imagen{
+        width: 200px;
+        height: 200px;
+    
+    }
+
+    h2{
+        display: flex;
+        justify-items: center;
+    }
+
+    section nav ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    section nav ul a{
+        margin-left: 15px;
+
+
+}
